@@ -1,0 +1,28 @@
+{
+    "display": {
+        "width": 800,
+        "height": 480,
+        "fullscreen": false,
+        "fps": 60
+    },
+    "raspberry_pi": {
+        "gpio_pins": {
+            "button_1": 18,
+            "button_2": 19,
+            "led_1": 20,
+            "led_2": 21
+        },
+        "spi_devices": {
+            "mcp3008": {
+                "channel": 0,
+                "bus": 0,
+                "device": 0
+            }
+        }
+    },
+    "game": {
+        "difficulty": "medium",
+        "sound_enabled": true,
+        "debug_mode": false
+    }
+}

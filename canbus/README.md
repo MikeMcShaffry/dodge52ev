@@ -1,10 +1,20 @@
-# SSH
+# SSH to Raspberry Pi
 
-* Don't be on the VPN
-* ssh 192.168.1.102
-* PWD ST 
+Don't be on the VPN
+ssh 192.168.1.102
+or
+ssh pi5popcorn
+
+PWD ST 
 
 
+# Remote Desktop
+in SSH run
+sudo raspi-config
+and make sure that under Interfaces, VNC is enabled
+(typically turn that off if it isn't needed)
+
+Run TigerNVC to hook up from the desktop
 
 # Start Up Notes for the Motor Bonnet
 
@@ -88,7 +98,7 @@ iface can0 inet manual
 ```
    
 Now I can see can0 on ifconfig...
-But no data.
+But no data.if
 
 Then I saw that post on soldering the jumpers on the PiCAN. NOW I SEE DATA!
 
